@@ -1,0 +1,167 @@
+---
+const recipient = "design-submissions@example.com";
+const mailtoHref = `mailto:${recipient}`;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<meta
+			name="description"
+			content="Print Your Design - precision 3D print services with clear file format guidelines and email-based submission."
+		/>
+		<title>Print Your Design - Precision 3D Printing</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/styles/site.css" />
+	</head>
+	<body>
+		<nav class="top-nav">
+			<div class="container nav-inner">
+				<span class="brand">Print Your Design</span>
+				<div class="nav-links">
+					<a class="active" href="#">Home</a>
+					<a href="#gallery">Gallery</a>
+					<a href="#workflow">How it Works</a>
+				</div>
+			</div>
+			<div class="nav-line"></div>
+		</nav>
+		<main>
+			<section class="hero">
+				<div class="container hero-grid">
+					<div>
+						<h1>
+							Bring Your 3D Designs to <span>Life</span>
+						</h1>
+						<p class="lead">
+							Precision engineering meets rapid manufacturing. High-fidelity prints delivered to your door with industrial-grade accuracy and a seamless digital workflow.
+						</p>
+						<p class="submit-note">
+							Design submissions can be sent to
+							<a href={mailtoHref}>{recipient}</a>
+						</p>
+						<div class="formats-panel">
+							<h2>Accepted File Formats</h2>
+							<div class="format-list" aria-label="Accepted upload file formats">
+								<span>STL</span>
+								<span>OBJ</span>
+								<span>STEP</span>
+								<span>3MF</span>
+								<span>PDF</span>
+								<span>SVG</span>
+								<span>PNG</span>
+								<span>AI</span>
+							</div>
+						</div>
+					</div>
+					<div class="hero-image-wrap">
+						<div class="hero-blur"></div>
+						<div class="hero-image-card">
+							<img alt="3D Printing in Progress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkqxRngYFF0DsYozbO1OrVR7JHwTBacGtTtziPfm_c6QKpBRDCQjt_g08sKJmbMtpeh5bQxXB__Oj6ylxL1ZxBNeB2jllzWcdyUqjNvuh_xyLH-1Prd-joWgejtfHy0KiLeHqR7OVQCUPppDKKzaaWZTLCbozkv47Pik8S1QlNpzqc2jacwmhb0D24EIFkg2Dz9yiHhxBQctS2CCdOQWfR3oI4V5vtXePzjIZLPy3sIZ4iB5U1HasPWR64mwL83FlMkX0QXUvjohAO" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="workflow" class="workflow">
+				<div class="container">
+					<div class="workflow-head">
+						<div>
+							<h2>Precision Workflow</h2>
+							<p>Our streamlined process ensures your digital vision translates perfectly into a physical object.</p>
+						</div>
+					</div>
+					<div class="workflow-grid">
+						<div class="workflow-card">
+							<div class="icon-box">1</div>
+							<h3>Upload File</h3>
+							<p>Send your file by email and our team validates geometry and print readiness instantly.</p>
+						</div>
+						<div class="workflow-card">
+							<div class="icon-box">2</div>
+							<h3>Get it Printed</h3>
+							<p>Sit back as our printers produce your design with 0.1mm accuracy and ship it to you.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="gallery" class="gallery">
+				<div class="container">
+					<h2>Recent Prints</h2>
+					<div class="gallery-grid">
+						<div class="gallery-item large">
+							<img alt="Mechanical Part" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC5LMEiWbvyrhoOkEf8IZ86VNqN7AvilOHdmoCMeT689Qvih5UPERX8Q0Qnzt4yeb5HH7TTW4MkoY_1WXyH3hb1CpDxn6pNlgJ2oMKBAGsn2kP43I3_a3869piy0Su47CgPLvCr8x7XT13kx1F_S7P_aB5PBNi1W6Y1aQmPwaXI2TWExYItr8TBQoqko0KEh501h54LfTfCF18Qxg0dyQeu0By6ay2dZtGYdAUQCRzhNsVsq7fSWMOwP5E8vof0qvWNx7wtOw5E2I0" />
+						</div>
+						<div class="gallery-item">
+							<img alt="Artistic Sculpture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJw2ie6Frg3qfe6i6Wsj2kC_AFqMgotFoBuXTsbQUcOmvFOV0QiqUTOmuid3PDRbmwjMCgzW94g9paSOMzcmigf_oskSREQVGcis8KhPPunoT-quq0ouAizAWspE6o3TBvEvLe7rCb0JyXo4W0QEdlGs0ZxN2KMjcsa_sFkKgKkxi_f1S4lPVZaccJ6JIcSKt8bZDtQ7yg0YKQ1Nccealm5ON4CUpsuoQckc3iiowiHtpkqogmT202y95ci8w3QTtddEWLeSCxJ_Hf" />
+						</div>
+						<div class="gallery-item">
+							<img alt="Technical Part" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAszDVjKnGwL_yLF-l4MmItS1vstF-eoxGIlxf5-ljEPCY04c2JdoX2CcWVfQAtNjaGiCafA8tVS53bDS1Y4QFhufA6w2umJWleFCLTHnKv2PEYW3ny3qYUvrXz1hDgpajGHG0-urpsTv9-agQMwZojw6KVGkYXItaH_-KzG1lAfgj2GDwfyhRIicjX8owZ16VhDOLtnW5JoqWaME8T3gOCbM5hXcT-YHfuG-FSF1v8ohrf5hcEWF002UD1-ADDihMNrm0JCO8_UbkZ" />
+						</div>
+						<div class="gallery-item wide">
+							<img alt="Medical Model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIfn_4RMy0XDYe663dPC6pmxtlEmZyl-DiwqYZuIh-6vucTQXHUVOSya8LibnEmLGQJpx6KwF5U_lttlm1lUvlxMdB_m3P8jb-G_o8nIAF9SeaXWfX2SvT2LXJBaVBF_VlS1Pes2GJWIgtXwZmmeenhnd4jie-ghuWpJu8QFtEJLi4q5n5sMKww3ZlbKWnDaIii3BKzdtVI7aZ9rvBNdQqWcg-6nW3BOyfqu1gFYTWajKBShM1V-FkCxu-t0qvPQV_SfeLpgUXBnsT" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="feedback">
+				<div class="container">
+					<div class="feedback-head">
+						<h2>User Feedback</h2>
+						<p>Precision is our obsession. Hear from the engineers and designers who trust us with their most critical projects.</p>
+					</div>
+					<div class="feedback-grid">
+						<div class="feedback-card">
+							<p>"The dimensional accuracy on our aerospace prototypes was within 0.05mm. The layer adhesion is the best we've seen in the industry."</p>
+						</div>
+						<div class="feedback-card">
+							<p>"Our architectural models require immense detail. This service handled complex geometry without errors."</p>
+						</div>
+						<div class="feedback-card">
+							<p>"Fast turnaround and exceptional surface finish for functional testing prototypes."</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container footer-grid">
+				<div>
+					<span class="footer-brand">Print Your Design</span>
+					<p>Manifesting digital innovation through high-precision manufacturing and additive technology.</p>
+				</div>
+				<div>
+					<h5>Platform</h5>
+					<ul>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#workflow">Workflow</a></li>
+						<li><a href={mailtoHref}>Contact</a></li>
+					</ul>
+				</div>
+				<div>
+					<h5>Company</h5>
+					<ul>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Terms</a></li>
+					</ul>
+				</div>
+				<div>
+					<h5>Contact</h5>
+					<p><a href={mailtoHref}>{recipient}</a></p>
+				</div>
+			</div>
+			<div class="container footer-bottom">
+				<div class="footer-line"></div>
+				<p>© 2026 Print Your Design. Precision &amp; Flow.</p>
+			</div>
+		</footer>
+	</body>
+</html>
